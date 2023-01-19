@@ -12,7 +12,7 @@ import {
 import * as SplashScreen from 'expo-splash-screen';
 
 import theme from './src/global/styles/theme';
-import { Dashboard } from './src/components/screens/Dashboard';
+import { Dashboard } from './src/screens/Dashboard';
 
 export default function App() {
   SplashScreen.preventAutoHideAsync();
