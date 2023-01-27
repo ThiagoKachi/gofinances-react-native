@@ -8,7 +8,7 @@ interface TransactionTypeProps {
 
 export const Container = styled.View`
   background-color: ${({ theme }) => theme.colors.shape};
-  border-radius: 8;
+  border-radius: 8px;
 
   padding: 18px 24px;
   margin-bottom: 16px;

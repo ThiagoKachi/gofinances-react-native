@@ -15,7 +15,7 @@ export const Container = styled.View<TypeProps>`
   border-radius: 6px;
 
   padding: 18px 24px;
-  padding-bottom: ${RFValue(42)};
+  padding-bottom: ${RFValue(42)}px;
   margin-right: 16px;
 `;
 

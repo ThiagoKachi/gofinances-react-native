@@ -27,7 +27,7 @@ export const UserWrapper = styled.View`
   width: 100%;
 
   padding: 0 24px;
-  margin-top: ${getStatusBarHeight() + RFValue(24)};
+  margin-top: ${getStatusBarHeight() + RFValue(24)}px;
 
   flex-direction: row;
   justify-content: space-between;
