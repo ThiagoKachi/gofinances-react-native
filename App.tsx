@@ -16,14 +16,13 @@ import * as SplashScreen from 'expo-splash-screen';
 
 import theme from './src/global/styles/theme';
 
-import { NavigationContainer } from '@react-navigation/native';
-import { AppRoutes } from './src/routes/app.routes';
+import { Routes } from './src/routes';
 
-import { SignIn } from './src/screens/SignIn';
-
-import { AuthProvider } from './src/hooks/Auth';
+import { AuthProvider, useAuth } from './src/hooks/Auth';
 
 export default function App() {
+  const { userStorageLoading } = useAuth();
+
   SplashScreen.preventAutoHideAsync();
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
@@ -32,7 +31,7 @@ export default function App() {
     Poppins_700Bold
   });
 
-  if (!fontsLoaded) {
+  if (!fontsLoaded || userStorageLoading) {
     return null;
   }
 
@@ -40,14 +39,11 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <NavigationContainer>
         <StatusBar barStyle="light-content" />
 
         <AuthProvider>
-          <SignIn />
+          <Routes />
         </AuthProvider>
-
-      </NavigationContainer>
     </ThemeProvider>
   );
 }

@@ -1802,10 +1802,10 @@
     "react-is" "^16.13.0"
     "use-latest-callback" "^0.1.5"
 
-"@react-navigation/elements@^1.3.13":
-  "integrity" "sha512-LqqK5s2ZfYHn2cQ376jC5V9dQztLH5ixkkJj9WR7JY2g4SghDd39WJhL3Jillw1Mu3F3b9sZwvAK+QkXhnDeAA=="
-  "resolved" "https://registry.npmjs.org/@react-navigation/elements/-/elements-1.3.13.tgz"
-  "version" "1.3.13"
+"@react-navigation/elements@^1.3.13", "@react-navigation/elements@^1.3.14":
+  "integrity" "sha512-RBbPhYq+KNFPAkWPaHB9gypq0jTGp/0fkMwRLToJ8jkLtWG4LV+JoQ/erFQnVARkR3Q807n0VnES15EYP4ITMQ=="
+  "resolved" "https://registry.npmjs.org/@react-navigation/elements/-/elements-1.3.14.tgz"
+  "version" "1.3.14"
 
 "@react-navigation/native@^6.0.0", "@react-navigation/native@^6.1.2":
   "integrity" "sha512-qLUe0asHofr5EhxKjvUBJ9DrPPmR4535IEwmW3oU4DRb3cLbNysjajJKHL8kcYtqPvn9Bx9QZG2x0PMb2vN23A=="
@@ -1823,6 +1823,15 @@
   "version" "6.1.6"
   dependencies:
     "nanoid" "^3.1.23"
+
+"@react-navigation/stack@^6.3.12":
+  "integrity" "sha512-sDclO/EflZUbfxZZlz5fk3A0wfegeCOEKGznP9n53s+JrDJL2Dc24Gufg56ENLNRX3CiE1KzsaM4SQLJYf/zsA=="
+  "resolved" "https://registry.npmjs.org/@react-navigation/stack/-/stack-6.3.12.tgz"
+  "version" "6.3.12"
+  dependencies:
+    "@react-navigation/elements" "^1.3.14"
+    "color" "^4.2.3"
+    "warn-once" "^0.1.0"
 
 "@segment/loosely-validate-event@^2.0.0":
   "integrity" "sha512-ZMCSfztDBqwotkl848ODgVcAmN4OItEWDCkshcKz0/W6gGSQayuuCtWV/MlodFivAZD793d6UgANd6wCXUfrIw=="
@@ -3656,6 +3665,11 @@
   "version" "2.1.1"
   dependencies:
     "expo-splash-screen" "~0.17.0"
+
+"expo-apple-authentication@~5.0.1":
+  "integrity" "sha512-xdHZb57gQb2eQYQdmZ2M5x4tQOiK1mkL5FW5oYDg9WefN3LMi1ypcjcVTeFstdkdpgwQDx18P2F52JtNA/jJdQ=="
+  "resolved" "https://registry.npmjs.org/expo-apple-authentication/-/expo-apple-authentication-5.0.1.tgz"
+  "version" "5.0.1"
 
 "expo-application@~5.0.1":
   "integrity" "sha512-bThxK5zH/Lc2tkCvEXGjfM7ayvOVmPWYcWzXsMIU1RtG73TyXo4cq+73FvfDNIWn6gKS0WyMcmoPB3WXEV/jsw=="
@@ -6276,7 +6290,7 @@
     "jscodeshift" "^0.13.1"
     "nullthrows" "^1.1.1"
 
-"react-native-gesture-handler@^2.8.0":
+"react-native-gesture-handler@^2.8.0", "react-native-gesture-handler@>= 1.0.0":
   "integrity" "sha512-a0BcH3Qb1tgVqUutc6d3VuWQkI1AM3+fJx8dkxzZs9t06qA27QgURYFoklpabuWpsUTzuKRpxleykp25E8m7tg=="
   "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-2.9.0.tgz"
   "version" "2.9.0"
