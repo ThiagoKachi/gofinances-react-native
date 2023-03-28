@@ -6,6 +6,10 @@ module.exports = {
     "/ios/",
   ],
   setupFilesAfterEnv: [
-    "@testing-library/jest-native/extend-expect"
-  ]
+    "@testing-library/jest-native/extend-expect",
+    "jest-styled-components"
+  ],
+  jest: {
+    setupFiles: ["./path/to/jestSetupFile.js"] 
+  }
 }
